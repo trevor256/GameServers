@@ -1,11 +1,8 @@
 #!/bin/bash
-sudo apt-get update -y && sudo apt-get upgrade -y
-sudo apt install openjdk-17-jre
-
-sudo useradd -m -r -U -d /opt/minecraft -s /bin/bash minecraft
-sudo su -l minecraft
-
-wget https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar
-java -Xms1024M -Xmx2048M -jar server.jar nogui
+apt-get update -y && apt-get upgrade -y
+apt install openjdk-17-jre screen
+wget https://storage256.s3.amazonaws.com/minecraft_server/forge-1.18-38.0.17-installer.jar
+java -jar forge-1.18-38.0.17-installer.jar --installServer
+java -Xms1024M -Xmx3096M -jar forge-1.18-38.0.17-installer.jar nogui  
 perl -pi -e 's/eula=false/eula=true/g' eula.txt
-java -Xms1024M -Xmx2048M -jar server.jar nogui
+java -Xms1024M -Xmx3096M -jar forge-1.18-38.0.17-installer.jar nogui  
