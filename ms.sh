@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt install openjdk-17-jre
 
 sudo useradd -m -r -U -d /opt/minecraft -s /bin/bash minecraft
