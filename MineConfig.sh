@@ -7,7 +7,7 @@ sudo echo 'eula=true' >> eula.txt
 sudo ufw allow proto tcp to 0.0.0.0/0 port 22
 sudo ufw allow proto tcp to 0.0.0.0/0 port 25565
 echo "y" | sudo ufw enable
-sudo java -Xmx1536M -Xms512M -jar server.jar nogui
+sudo java -Xms1024M -jar server.jar nogui
 #sudo screen -S minecraft
 
 # auto jobs 
