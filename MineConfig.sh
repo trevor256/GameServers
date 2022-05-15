@@ -10,7 +10,7 @@ sudo ufw allow proto tcp to 0.0.0.0/0 port 22
 sudo ufw allow proto tcp to 0.0.0.0/0 port 25565
 sudo ufw enable -y
 sudo java -Xmx3596M -Xms1024M -jar minecraft/server.jar nogui
-sudo screen -S minecraft
+#sudo screen -S minecraft
 
 # auto jobs 
 ######## back up every ?
