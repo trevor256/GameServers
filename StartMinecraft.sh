@@ -1,2 +1,13 @@
-#!/bin/bash
-java -Xmx1024M -Xms1024M -jar server.jar nogui
+[Unit]
+
+Description=ss
+
+After=default.target
+
+[Service]
+
+ExecStart=/PATH/TO/ss.sh
+
+[Install]
+
+WantedBy=default.target
