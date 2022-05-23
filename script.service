@@ -6,7 +6,7 @@ After=default.target
 
 [Service]
 
-ExecStart=/PATH/TO/ss.sh
+ExecStart=ss.sh
 
 [Install]
 
