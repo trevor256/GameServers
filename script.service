@@ -1,13 +1,16 @@
 [Unit]
-
 Description=ss
-
-After=default.target
+Wants=network.target
+After=network.target
 
 [Service]
+Nice=5
+KillMode=control-group
+SuccessExitStatus=0 1
 
+ReadWriteDirectories=/home/admin/
+WorkingDirectory=/home/admin/
 ExecStart=/home/admin/ss.sh
 
 [Install]
-
-WantedBy=default.target
+WantedBy=multi-user.target
