@@ -1,6 +1,6 @@
 # MinecraftServer
 
-***ConfigureServer/*  has is the files that configure the minecraftserver.**
+***ConfigureServer/*  has the files that configure the minecraftserver.**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; run command on linux server to install, run, and config a minecraftserver
 ```
