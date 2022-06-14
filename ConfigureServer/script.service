@@ -10,7 +10,7 @@ SuccessExitStatus=0 1
 
 ReadWriteDirectories=/home/admin/
 WorkingDirectory=/home/admin/
-ExecStart=/home/admin/ss.sh
+ExecStart=/home/admin/start.sh
 
 [Install]
 WantedBy=multi-user.target
