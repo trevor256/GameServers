@@ -6,6 +6,7 @@ printf "[Unit]
 Description=starts ss.sh on startup
 Wants=network.target
 After=network.target
+
 [Service]
 Nice=5
 KillMode=control-group
@@ -13,6 +14,7 @@ SuccessExitStatus=0 1
 ReadWriteDirectories=/home/admin/
 WorkingDirectory=/home/admin/
 ExecStart=/home/admin/start.sh
+
 [Install]
 WantedBy=multi-user.target" > /etc/systemd/system/script.service
 
