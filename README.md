@@ -9,7 +9,7 @@ curl -L https://raw.githubusercontent.com/trevor256/MinecraftServer/main/config.
 
 <br/><br/>
 
-***make.sh*  builds a linux cloud server in AWS if you don't have a server already.**
+***make.sh* builds a linux cloud server in AWS if you don't have a server already, or just have a Debian Linux server.**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(NEED AWS ACCOUNT AND IAM CREDENTIALS)* run command on computer to make a cloud server using AWS CLI and terraform CLI
 ```
