@@ -1,10 +1,10 @@
 # MinecraftServer
 
-***ConfigureServer/*  has the files that configure the minecraftserver.**
+***config.sh* configures the minecraftserver.**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; run command on linux server to install, run, and config a minecraftserver
 ```
-curl -L https://raw.githubusercontent.com/trevor256/MinecraftServer/main/ConfigureServer/ConfigMinecraftServer.sh -o cs.sh && sudo sh cs.sh
+curl -L https://raw.githubusercontent.com/trevor256/MinecraftServer/main/config.sh -o c.sh && sudo sh c.sh
 ```
 
 <br/><br/>
