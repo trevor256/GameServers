@@ -1,4 +1,10 @@
 #!/bin/bash
+########################################
+#  Author https://github.com/trevor256
+#  script configs new minecraft server
+#  Linux OS (debian)
+########################################
+
 sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt install openjdk-18-jre ufw -y ##install Java and firewall
 
