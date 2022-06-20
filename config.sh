@@ -6,7 +6,7 @@
 ########################################
 
 sudo apt-get update -y && sudo apt-get upgrade -y
-sudo apt install openjdk-18-jre ufw -y ##install Java and firewall
+sudo apt-get install openjdk-17-jre ufw -y ##install Java and firewall
 
 echo -e '#!/bin/bash\nsudo cp -u -r world backup\nsudo java -Xms1024M -jar server.jar nogui &' > start.sh ##adds script to backup world and run minecraft
 printf "[Unit]
