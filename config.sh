@@ -26,7 +26,7 @@ ExecStart=/home/admin/start.sh
 WantedBy=multi-user.target" > /etc/systemd/system/script.service 
 sudo systemctl enable script.service ##adds systemd service to run start.sh on boot
 
-sudo curl -o https://launcher.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar ##download minecraft server
+sudo curl -O https://storage256.s3.amazonaws.com/minecraft_server/downloads/forge-1.19-41.0.42-installer.jar server.jar##download minecraft server
 echo 'eula=true' >> eula.txt ##agree to end user license agreement 
 
 sudo ufw allow proto tcp to 0.0.0.0/0 port 22 25565 ##firewall only allows ssh and minecraft
