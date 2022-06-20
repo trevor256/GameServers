@@ -29,6 +29,6 @@ sudo curl -O https://storage256.s3.amazonaws.com/minecraft_server/downloads/forg
 java -jar forge-1.19-41.0.42-installer.jar --installServer
 echo 'eula=true' >> eula.txt #agree to end user license agreement 
 
-sudo ufw allow proto tcp to 0.0.0.0/0 port 22 25565 #firewall only allows ssh and minecraft
+sudo ufw allow proto tcp to 0.0.0.0/0 port 22,25565 #firewall only allows ssh and minecraft
 echo "y" | sudo ufw enable
 sudo bash run.sh
