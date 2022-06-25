@@ -11,7 +11,7 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 
-echo "${GREEN}${bold} install AWS CLI and Terraform CLI?${NC}${normal} (y/n)"
+echo "install AWS CLI and Terraform CLI? (y/n)"
 read -r reply
   if [ "$reply" = y ] || [ "$reply" = Y ]
    
