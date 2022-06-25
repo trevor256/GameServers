@@ -10,11 +10,12 @@ NC='\033[0m'
 bold=$(tput bold)
 normal=$(tput sgr0)
 
-echo "${GREEN}${bold}install AWS CLI and Terraform CLI? ${NC}${normal} (y/n)"
+
+echo "${GREEN}${bold} install AWS CLI and Terraform CLI?${NC}${normal} (y/n)"
 read -r reply
   if [ "$reply" = y ] || [ "$reply" = Y ]
    then
-  
+   
     echo "${GREEN}${bold} Installing AWS CLI..${NC}${normal}"
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
     unzip awscliv2.zip
