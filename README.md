@@ -1,18 +1,22 @@
-# MinecraftServer
-
-***config.sh* configures the minecraftserver.**
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; run command on linux server to install, run, and config a minecraftserver
-```
-curl -L https://raw.githubusercontent.com/trevor256/MinecraftServer/main/config.sh -o c.sh && sudo sh c.sh
+# Configure Modded Minecraft Server
+ 
+***config.sh* --- run command on Debian Linux server to install, run, and config a modded minecraftserver**
+``` bash
+curl -L https://raw.githubusercontent.com/trevor256/MinecraftServer/main/config.sh | sudo bash
 ```
 
 <br/><br/>
+# Make A Cloud Server for Minecraft <br/> &nbsp;&nbsp;*(NEED AWS ACCOUNT AND IAM CREDENTIALS)* 
+***make.sh or make.ps1* --- run on desktop to build a linux cloud server in AWS if you don't have a server already.**
 
-***make.sh* builds a linux cloud server in AWS if you don't have a server already, or just have a Debian Linux server.**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(NEED AWS ACCOUNT AND IAM CREDENTIALS)* run command on computer to make a cloud server using AWS CLI and terraform CLI
+
+linux 
+``` bash
+curl -L https://raw.githubusercontent.com/trevor256/MinecraftServer/main/make.sh | sudo bash
 ```
-curl -L https://raw.githubusercontent.com/trevor256/MinecraftServer/main/MakeServer/BuildCloudServer.sh -o ms.sh && sudo sh ms.sh
-```
 
+Windows
+``` powershell
+curl -L https://raw.githubusercontent.com/trevor256/MinecraftServer/main/make.ps1 | sudo bash
+```
