@@ -6,17 +6,16 @@ curl -L https://raw.githubusercontent.com/trevor256/MinecraftServer/main/config.
 ```
 
 <br/><br/>
-# Make A Cloud Server for Minecraft <br/> &nbsp;&nbsp;*(NEED AWS ACCOUNT AND IAM CREDENTIALS)* 
+# Make A Cloud Server for Modded Minecraft <br/> &nbsp;&nbsp;*(NEED AWS ACCOUNT AND IAM CREDENTIALS)* 
 ***make.sh or make.ps1* --- run on desktop to build a linux cloud server in AWS if you don't have a server already.**
 
 
 
-linux 
+&nbsp;&nbsp;&nbsp;Linux ↓
 ``` bash
 curl -L https://raw.githubusercontent.com/trevor256/MinecraftServer/main/make.sh | sudo bash
 ```
-
-Windows
+&nbsp;&nbsp;&nbsp;Windows ↓
 ``` powershell
 curl -L https://raw.githubusercontent.com/trevor256/MinecraftServer/main/make.ps1 | sudo bash
 ```
