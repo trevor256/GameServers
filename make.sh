@@ -4,12 +4,6 @@
 # https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started
 ####################################
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-NC='\033[0m'
-bold=$(tput bold)
-normal=$(tput sgr0)
-
 
 echo "install AWS CLI and Terraform CLI? (y/n)"
 read -r reply
