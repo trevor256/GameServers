@@ -2,11 +2,11 @@
 ########################################
 #  Author https://github.com/trevor256
 #  script configs new minecraft server
-#  Linux OS (debian)
+#  Linux OS (ubuntu)
 ########################################
 
 sudo apt-get update -y && sudo apt-get upgrade -y
-sudo apt-get install openjdk-17-jre ufw -y
+sudo apt-get install openjdk-18-jre-headless  -y
 
 printf "[Unit]
 Description=starts ss.sh on startup
