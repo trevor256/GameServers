@@ -6,7 +6,7 @@
 ########################################
 
 sudo apt-get update -y && sudo apt-get upgrade -y
-sudo apt-get install openjdk-17-jre ufw -y #install Java and firewall
+sudo apt-get install openjdk-17-jre ufw -y
 
 printf "[Unit]
 Description=starts ss.sh on startup
@@ -22,13 +22,13 @@ WorkingDirectory=/home/admin/
 ExecStart=/home/admin/run.sh
 
 [Install]
-WantedBy=multi-user.target" > /etc/systemd/system/script.service 
-sudo systemctl enable script.service #adds systemd service to run.sh on boot
+WantedBy=multi-user.target" > /etc/systemd/system/startm.service 
 
-sudo curl -O https://storage256.s3.amazonaws.com/minecraft_server/downloads/forge-1.19-41.0.42-installer.jar #download minecraft server
+sudo systemctl enable startm.service
+sudo curl -O https://storage256.s3.amazonaws.com/minecraft_server/downloads/forge-1.19-41.0.42-installer.jar
 java -jar forge-1.19-41.0.42-installer.jar --installServer
-echo 'eula=true' >> eula.txt #agree to end user license agreement 
-sudo wget -P mods https://storage256.s3.amazonaws.com/minecraft_server/downloads/AddStruct.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/lithium.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/sodium.jar
-sudo ufw allow proto tcp to 0.0.0.0/0 port 22,25565 #firewall only allows ssh and minecraft
+echo 'eula=true' >> eula.txt
+sudo wget -P mods https://storage256.s3.amazonaws.com/minecraft_server/downloads/phosphor.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/corpse.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/furniture.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/AddStruct.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/lithium.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/sodium.jar
+sudo ufw allow proto tcp to 0.0.0.0/0 port 22,25565
 echo "y" | sudo ufw enable
 sudo bash run.sh
