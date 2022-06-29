@@ -6,7 +6,7 @@
 ########################################
 
 sudo apt-get update -y && sudo apt-get upgrade -y
-sudo apt-get install openjdk-18-jre-headless -y
+sudo apt-get install openjdk-17-jre-headless -y
 
 printf "[Unit]
 Description=starts ss.sh on startup
