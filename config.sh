@@ -28,7 +28,7 @@ sudo systemctl enable startm.service
 sudo curl -O https://storage256.s3.amazonaws.com/minecraft_server/downloads/forge-1.19-41.0.62-installer.jar
 java -jar forge-1.19-41.0.42-installer.jar --installServer
 echo 'eula=true' >> eula.txt
-sudo wget -P mods https://storage256.s3.amazonaws.com/minecraft_server/downloads/jei-1.19-forge-11.0.0.206.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/Jade-1.19-forge-7.3.1.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/phosphor.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/corpse.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/furniture.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/AddStruct.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/lithium.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/sodium.jar
+sudo wget -P mods https://storage256.s3.amazonaws.com/minecraft_server/downloads/jei-1.19-forge-11.0.0.206.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/Jade-1.19-forge-7.3.1.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/phosphor.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/corpse.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/cfm-7.0.0-pre31-1.19.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/AddStruct.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/lithium.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/sodium.jar
 sudo ufw allow proto tcp to 0.0.0.0/0 port 22,25565
 echo "y" | sudo ufw enable
 sudo bash run.sh
