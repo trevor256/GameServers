@@ -32,3 +32,4 @@ sudo wget -P mods https://storage256.s3.amazonaws.com/minecraft_server/downloads
 sudo ufw allow proto tcp to 0.0.0.0/0 port 22,25565
 echo "y" | sudo ufw enable
 sudo bash run.sh
+# tar xvf Minecraft-Backup.tar.gz world
