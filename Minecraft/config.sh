@@ -29,8 +29,12 @@ sudo curl -O https://storage256.s3.amazonaws.com/minecraft_server/downloads/forg
 java -jar forge-1.19-41.0.42-installer.jar --installServer
 echo 'eula=true' >> eula.txt
 sudo wget -P mods https://storage256.s3.amazonaws.com/minecraft_server/downloads/phosphor.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/AddStruct.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/lithium.jar 
-# sudo ufw allow proto tcp to 0.0.0.0/0 port 22,25565 replace with iptables
-echo "y" | sudo ufw enable
+iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -j ACCEPT
+iptables -A INPUT -p tcp  -m tcp --dport 25565 -j ACCEPT
+iptables -A INPUT -j REJECT --reject-with icmp-host-prohibited
+
 sudo bash run.sh
 
 # tar xvf $(/bin/date +%f)Minecraft-Backup.tar.gz world
