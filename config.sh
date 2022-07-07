@@ -6,7 +6,7 @@
 ########################################
 
 sudo apt-get update -y && sudo apt-get upgrade -y
-sudo apt-get install openjdk-17-jre-headless ufw -y
+sudo apt-get install openjdk-17-jre-headless -y
 
 printf "[Unit]
 Description=starts run.sh on startup
@@ -29,7 +29,7 @@ sudo curl -O https://storage256.s3.amazonaws.com/minecraft_server/downloads/forg
 java -jar forge-1.19-41.0.42-installer.jar --installServer
 echo 'eula=true' >> eula.txt
 sudo wget -P mods https://storage256.s3.amazonaws.com/minecraft_server/downloads/phosphor.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/AddStruct.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/lithium.jar 
-sudo ufw allow proto tcp to 0.0.0.0/0 port 22,25565
+# sudo ufw allow proto tcp to 0.0.0.0/0 port 22,25565 replace with iptables
 echo "y" | sudo ufw enable
 sudo bash run.sh
 
