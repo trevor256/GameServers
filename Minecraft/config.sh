@@ -35,7 +35,7 @@ iptables -A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -j ACCEPT
 iptables -A INPUT -p tcp  -m tcp --dport 25565 -j ACCEPT
 iptables -A INPUT -j REJECT --reject-with icmp-host-prohibited
 
-sudo bash run.sh
+nohup sudo bash run.sh
 
 # tar xvf $(/bin/date +%f)Minecraft-Backup.tar.gz world
 # scp backup to a location
