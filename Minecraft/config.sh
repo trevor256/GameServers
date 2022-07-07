@@ -38,3 +38,4 @@ iptables -A INPUT -j REJECT --reject-with icmp-host-prohibited
 sudo bash run.sh
 
 # tar xvf $(/bin/date +%f)Minecraft-Backup.tar.gz world
+# scp backup to a location
