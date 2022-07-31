@@ -1,6 +1,6 @@
 # Configure Modded Minecraft Server
  
-***config.sh* --- run command on Debian Linux server to install, run, and config a modded minecraftserver 1.19 with phosphor, lithium**
+***config.sh* --- run command on Debian Linux server to install, run, and config a modded minecraftserver 1.19.1 with lithium**
 ``` bash
 curl -L https://raw.githubusercontent.com/trevor256/GameServers/main/Minecraft/config.sh | sudo bash
 ```
