@@ -40,3 +40,4 @@ sudo bash run.sh &
 # aws configure
 # aws s3 cp --recursive world s3://storage256/minecraft_server/backups/world
 # aws s3 sync s3://storage256/minecraft_server/backups/ .
+# Welcome to \u00A72mc.trevor256.com\n\u00A7c\u00A7lRule \u00A7fNo destroying or stealing from other bases
