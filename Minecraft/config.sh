@@ -39,4 +39,4 @@ sudo bash run.sh &
 
 # aws configure
 # aws s3 cp --recursive world s3://storage256/minecraft_server/backups/world
-# sudo wget -P world https://storage256.s3.amazonaws.com/minecraft_server/
+# aws s3 sync s3://storage256/minecraft_server/backups/ .
