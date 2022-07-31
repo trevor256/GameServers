@@ -29,7 +29,7 @@ sudo curl -O https://storage256.s3.amazonaws.com/minecraft_server/downloads/forg
 java -jar forge-1.19.1-42.0.1-installer.jar --installServer
 echo 'eula=true' >> eula.txt
 sudo wget -P mods https://storage256.s3.amazonaws.com/minecraft_server/downloads/AddS1.19.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/lithium-1.19.1.jar https://storage256.s3.amazonaws.com/minecraft_server/downloads/Clumps-forge-1.19.1.jar 
-sudo wget https://storage256.s3.amazonaws.com/minecraft_server/downloads/mine.png
+sudo wget https://storage256.s3.amazonaws.com/minecraft_server/downloads/server-icon.png
 sudo iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 sudo iptables -A INPUT -i lo -j ACCEPT
 sudo iptables -A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -j ACCEPT
