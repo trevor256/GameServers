@@ -5,7 +5,7 @@
 #  Linux OS (ubuntu)
 ########################################
 
-sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-get update -y
 sudo apt-get install openjdk-17-jre-headless -y
 
 printf "[Unit]
